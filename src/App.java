@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         
         Calendario calendario1 = new Calendario();
+    
 
         Scanner reader = new Scanner(System.in);
         System.out.println("Inserisci Il mese");
@@ -14,6 +15,8 @@ public class App {
         calendario1.giorno = g;
         calendario1.mese = m;
         calendario1.controlloMeseGiorno();
+        calendario1.controlloSegnoZodicale();
+        
         reader.close();
 
 
