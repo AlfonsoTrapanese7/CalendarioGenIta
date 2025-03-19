@@ -76,14 +76,12 @@ public class Calendario {
                     System.out.println("Lezione Database");
                 } else if (giorno > 17 && giorno <= 20){
                     System.out.println("Lezione JDBC");
-                } else if (giorno == 21) {
+                } else if (giorno == 21 || giorno == 25) {
                     System.out.println("Giorno festivo");
                 } else if (giorno > 21 && giorno <= 23){
                     System.out.println("Lezione JDBC");
                 } else if (giorno == 24) {
                     System.out.println("Lezione Java Spring");
-                } else if (giorno == 25) {
-                    System.out.println("Giorno festivo");
                 } else if (giorno > 25 && giorno <= 30) {
                     System.out.println("Lezione Java Spring");
                 } else {
