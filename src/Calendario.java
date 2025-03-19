@@ -1,5 +1,5 @@
 public class Calendario {
-    public String mese = "Febbraio";
+    public String mese = "Gennaio";
     public int giorno = 1;
 
     public void controlloMeseGiorno() {
@@ -42,34 +42,13 @@ public class Calendario {
                 }
                 break;
 
-            case "Luglio":
+            case "Luglio", "Agosto", "Ottobre", "Dicembre":
                 if (giorno >= 1 && giorno <= 31) {
                     System.out.println("Corso non presente");
                 } else {
                     System.out.println("Giorno non valido");
                 }
-                break;
-            case "Agosto":
-                if (giorno >= 1 && giorno <= 31) {
-                    System.out.println("Corso non presente");
-                } else {
-                    System.out.println("Giorno non valido");
-                }
-                break;
-            case "Ottobre":
-                if (giorno >= 1 && giorno <= 31) {
-                    System.out.println("Corso non presente");
-                } else {
-                    System.out.println("Giorno non valido");
-                }
-                break;
-            case "Dicembre":
-                if (giorno >= 1 && giorno <= 31) {
-                    System.out.println("Corso non presente");
-                } else {
-                    System.out.println("Giorno non valido");
-                }
-                break;
+                break;            
             case "Aprile":
                 if (giorno >= 1 && giorno <= 8) {
                     System.out.println("Lezione Java");
@@ -89,21 +68,7 @@ public class Calendario {
                     System.out.println("Giorno non valido");
                 }
                 break;
-            case "Giugno":
-                if (giorno >= 1 && giorno <= 30) {
-                    System.out.println("Corso non presente");
-                } else {
-                    System.out.println("Giorno non valido");
-                }
-                break;
-            case "Settembre":
-                if (giorno >= 1 && giorno <= 30) {
-                    System.out.println("Corso non presente");
-                } else {
-                    System.out.println("Giorno non valido");
-                }
-                break;
-            case "Novembre":
+            case "Giugno", "Settembre", "Novembre":
                 if (giorno >= 1 && giorno <= 30) {
                     System.out.println("Corso non presente");
                 } else {
@@ -123,7 +88,7 @@ public class Calendario {
                 System.out.println("Nome del mese non valido");
         }
     }
-
+    
     
     public void controlloSegnoZodicale() {
         switch (mese) {
